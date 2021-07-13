@@ -11,13 +11,12 @@ const root = resolve(process.cwd());
 const context = resolve(root, "src");
 const dist = resolve(root, "dist");
 
+const extensions = [".tsx", ".ts", ".js", ".json"];
+const alias = resolveTsAliases(resolve("tsconfig.json"));
 const CSS_MODULES_LOCAL_IDENT_NAME = devMode ? "[local]--[hash:base64:7]" : "[hash:base64:7]";
 
 const config: Configuration = {
-  resolve: {
-    extensions: [".tsx", ".ts", ".js", ".json"],
-    alias: resolveTsAliases(resolve("tsconfig.json"))
-  },
+  resolve: { extensions, alias },
   context,
   entry: {
     index: "./index"
@@ -65,6 +64,7 @@ const config: Configuration = {
                   webpackHotModuleReloading: true,
                   generateScopedName: CSS_MODULES_LOCAL_IDENT_NAME
                 }],
+                ["module-resolver", { extensions, alias }],
                 devMode && "react-refresh/babel"
               ].filter(Boolean)
             }

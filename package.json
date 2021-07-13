@@ -23,6 +23,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@types/react-css-modules": "^4.6.4",
     "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
     "css-loader": "^5.2.2",
     "eslint": "^7.30.0",
     "eslint-webpack-plugin": "^2.5.3",
