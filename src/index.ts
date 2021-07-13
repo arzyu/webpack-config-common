@@ -61,6 +61,7 @@ const config: Configuration = {
                 ["@dr.pogodin/babel-plugin-react-css-modules", {
                   context,
                   exclude: "node_modules",
+                  autoResolveMultipleImports: true,
                   webpackHotModuleReloading: true,
                   generateScopedName: CSS_MODULES_LOCAL_IDENT_NAME
                 }],
