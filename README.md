@@ -9,3 +9,7 @@ Common part for webpack configuration.
 ```shell
 npm add @arzyu/webpack-config-common
 ```
+
+## Recommendation
+
+Using [airpack](https://github.com/arzyu/airpack) allows you to share webpack configuration in multiple projects more elegantly, without writing any `webpack.config.*` files.
