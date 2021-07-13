@@ -1,6 +1,6 @@
 # webpack-config-common
 
-![npm (scoped)](https://img.shields.io/npm/v/arzyu/webpack-config-common?style=flat-square)
+![npm package version](https://img.shields.io/npm/v/@arzyu/webpack-config-common?style=flat-square)
 
 Common part for webpack configuration.
 
