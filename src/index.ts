@@ -125,7 +125,8 @@ const config: Configuration = {
     contentBase: dist,
     host: "0.0.0.0",
     useLocalIp: true,
-    hot: true
+    hot: true,
+    historyApiFallback: true
   }
 };
 
