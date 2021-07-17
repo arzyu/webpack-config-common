@@ -1,6 +1,6 @@
 {
   "name": "@arzyu/webpack-config-common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Common part for webpack configuration.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
