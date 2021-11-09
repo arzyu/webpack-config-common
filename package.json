@@ -33,7 +33,7 @@
     "react-refresh": "^0.10.0",
     "resolve-ts-aliases": "^1.0.1",
     "style-loader": "^3.3.1",
-    "webpack": "^5.44.0"
+    "webpack": "^5.62.1"
   },
   "devDependencies": {
     "@types/node": "^14.17.4",
