@@ -121,11 +121,12 @@ const config: Configuration = {
     devMode && new ReactRefreshPlugin(),
   ].filter(Boolean) as WebpackPluginInstance[],
   devServer: {
-    contentBase: dist,
     host: "0.0.0.0",
-    useLocalIp: true,
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    static: {
+      directory: dist
+    }
   }
 };
 
