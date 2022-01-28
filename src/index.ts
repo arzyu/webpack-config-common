@@ -1,9 +1,14 @@
 import { resolve } from "path";
 
 import { resolveTsAliases } from "resolve-ts-aliases";
-import { Configuration, WebpackPluginInstance } from "webpack";
+import { Configuration as WebpackConfiguration, WebpackPluginInstance } from "webpack";
+import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-server";
 import EslintPlugin from "eslint-webpack-plugin";
 import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
+
+export interface Configuration extends WebpackConfiguration {
+  devServer?: WebpackDevServerConfiguration;
+}
 
 const devMode = process.env.NODE_ENV !== "production";
 
